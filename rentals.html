@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Enjoy Surfing | Final Project | COMP1002 HTML, CSS and JS Fund</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Merienda+One|Montserrat|Mr+Dafoe|Norican" rel="stylesheet">
+  <link href="css/column.css" rel="stylesheet">
+  <script src="js/navDropdown.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/img.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Enjoy Surfing</h1>
+    <img src="img/silhouetteW.png" alt="Image of silhouette">
+    <nav>
+      <ul>
+        <li><a href="index.html" title="About">About</a></li>
+        <!-- How TO - Dropdown Navbar https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
+        <ul class="lessons">
+          <button class="dropbtn" onclick="DropdownFunction()">Lessons</button>
+          <li class="lessons-content" id="lessonsDropdown">
+            <a href="lessonsGroup.html">Group</a>
+            <a href="lessonsPrivate.html">Private</a>
+          </li>
+        </ul>
+        <li><a href="rentals.html" title="Rentals">Rentals</a></li>
+        <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+        <li><a href="contact.html" title="Contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2 id="titleH2">Rentals</h2>
+    <p> Here is introducion of Rentals.</p>
+<div class="rentals">
+    <form class="column" id="soft-surfboard-rentals" method="GET" action="booking.php">
+      <h3>Soft surfboard rentals</h3>
+      <img class="column" src="img/1on1.jpg" title="Soft surfboard rentals" alt="Image of Soft surfboard rentals">
+      <input type="hidden" id="bookingImgSrc" name="bookingImgSrc" value="img/1on1.jpg">
+      <input type="hidden" id="bookingImgTitle" name="bookingImgTitle" value="Soft surfboard rentals">
+      <ul>
+        <li>Soft surfboards are generally much safer for the beginner surfer.</li>
+        <li>The boards are also extremely durable.</li>
+        <li>Some performance limitations</li>
+      </ul>
+      <button type="submit" title="Book soft surfboard rentals now" name="booking" value="Soft surfboard rentals">Book Now</button>
+    </form>
+
+    <form class="column" id="funboard-rentals" method="GET" action="booking.php">
+      <h3>Funboard rentals</h3>
+      <img class="column" src="img/surfer2.jpg" title="Funboard rentals" alt="Image of Funboard rentals">
+      <input type="hidden" id="bookingImgSrc" name="bookingImgSrc" value="img/surfer2.jpg">
+      <input type="hidden" id="bookingImgTitle" name="bookingImgTitle" value="Funboard rentals">
+      <ul>
+        <li>Ideal for learning to surf</li>
+        <li>Easily catches waves</li>
+        <li>Difficult to duck-dive</li>
+        <li>Not ideal for hollow or larger surf</li>
+        <!-- https://www.secondhandboards.com/blog/7-types-of%20surfboard-shape-you-need-to-know-about -->
+      </ul>
+      <button type="submit" title="Book funboard rentals now" name="booking" value="Funboard rentals">Book Now</button>
+    </form>
+</div>
+
+<div class="rentals">
+    <form class="column" id="fish-surfboard-rentals" method="GET" action="booking.php">
+      <h3>Fish surfboard rentals</h3>
+      <img class="column" src="img/surfer1.jpg" title="Fish surfboard rentals" alt="Image of Fish surfboard rentals">
+      <input type="hidden" id="bookingImgSrc" name="bookingImgSrc" value="img/surfer1.jpg">
+      <input type="hidden" id="bookingImgTitle" name="bookingImgTitle" value="Fish surfboard rentals">
+      <ul>
+        <li>Performs well in weak/small surf</li>
+        <li>Thick boards like a fish don't snap as easily </li>
+        <li>Only suitable for intermediate+ surfers</li>
+        <li>Not suited for hollow or large waves</li>
+        <!-- https://www.secondhandboards.com/blog/7-types-of%20surfboard-shape-you-need-to-know-about -->
+      </ul>
+      <button type="submit" title="Book fish surfboard rentals now" name="booking" value="Fish surfboard rentals">Book Now</button>
+    </form>
+
+    <form class="column" id="boogie-board-rentals" method="GET" action="booking.php">
+      <h3>Boogie board rentals</h3>
+      <img class="column" src="img/boogie.jpg" title="Boogie board rentals" alt="Image of Boogie board rentals">
+      <input type="hidden" id="bookingImgSrc" name="bookingImgSrc" value="img/boogie.jpg">
+      <input type="hidden" id="bookingImgTitle" name="bookingImgTitle" value="Boogie board rentals">
+      <ul>
+        <li>small, more rectangular boards you lay on rather than standing</li>
+        <li>one of the safest options for families in small waves</li>
+        <!-- http://archive.clubofthewaves.com/surf-culture/types-of-surfboard.php -->
+      </ul>
+      <button type="submit" title="Book boogie board rentals now" name="booking" value="Boogie board rentals">Book Now</button>
+    </form>
+</div>
+    <p>Come “sea life differently” and experience for yourself what everyone is talking about. You will have an adventure that will change your life forever!</p>
+  </main>
+  <footer>
+    <ul>
+      <li>
+        <h3>ENJOY updates</h3>
+        <ul>
+          <li>
+            <p>Get the latest news, camp updates, schedules, events & more.</p>
+            <form action="email.html">
+              <input type="email" name="emailadd" placeholder="Email Address"><br>
+              <button type="submit" name="JoinEmail">Join</button>
+            </form>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h3>Our Website</h3>
+        <ul>
+          <li><a href="index.html" title="About">About</a></li>
+          <li><a href="lessonsGroup.html" title="Lessons">Lessons</a></li>
+          <li><a href="rentals.html" title="Rentals">Rentals</a></li>
+          <li><a href="gallery.html#" title="Gallery">Gallery</a></li>
+          <li><a href="contact.html" title="Contact">Contact</a></li>
+        </ul>
+      </li>
+      <li>
+        <h3>Follow Us</h3>
+        <ul>
+          <li>
+            <a href="#" title="FaceBook"><img src="img/facebook.png" alt="FaceBook"></a>
+            <a href="#" title="Instagram"><img src="img/instagram.png" alt="Instagram"></a>
+            <a href="#" title="Twitter"><img src="img/twitter.png" alt="Twitter"></a>
+            <a href="#" title="Vimeo"><img src="img/vimeo.png" alt="Vimeo"></a>
+            <a href="#" title="YouTube"><img src="img/youtube.png" alt="YouTube"></a>
+            <a href="#" title="TripAdvisor"><img src="img/tripadvisor.png" alt="TripAdvisor"></a>
+          </li>
+
+        </ul>
+      </li>
+
+    </ul>
+    <small>&copy; 2018. Kuei-Chin Huang. All Rights Reserved. | <a href="legal/privacy-policy.html" title="Privacy Policy">Privacy Policy</a> | <a href="legal/terms-of-use.html" title="Terms of Use">Terms of Use</a></small>
+  </footer>
+</body>
+
+</html>

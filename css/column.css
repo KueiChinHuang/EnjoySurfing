@@ -1,0 +1,89 @@
+.column {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+form div {
+  line-height: 1.8em;
+}
+
+.column h3 {
+  text-align: center;
+}
+
+.column img {
+  float: none;
+  width: 80%;
+}
+
+.column ul {
+  text-align: left;
+  padding-left: 3em;
+}
+
+.column input[type="submit"] {
+  display: inline-block;
+  padding: 0 18px;
+  margin: 0.5em;
+  height: 42px;
+  width: auto;
+  color: #FFFFFF;
+  font: 700 15px/42px;
+  border: 2px solid #A7A9AC;
+  border-radius: 21px;
+  border-color: #006EB7;
+  background: #006EB7;
+  cursor: pointer;
+}
+
+.column#contactClnL {
+  width: 65%;
+  text-align: left;
+}
+
+.column#contactClnR {
+  width: 30%;
+  text-align: left;
+  margin: 10px 10px;
+  font-size: 0.8em;
+}
+
+.column#contactClnR h3, .column#contactClnR p {
+  margin: 0;
+  text-align: left;
+}
+
+.BDetailed {
+  text-align: right;
+}
+
+div label {
+  display: block;
+  width: 250px;
+  float: left;
+  text-align: right;
+  padding-right: 1em;
+}
+
+div#contactClnL label {
+  width: 120px;
+}
+
+label img {
+  width: 20px;
+  display: inline;
+}
+
+div.rentals {
+  display: inline-block;
+}
+
+div.button {
+  text-align: center;
+}
+
+input, select, option, textarea {
+  font-family: inherit;
+  font-size: 1em;
+}
